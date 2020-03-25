@@ -1,10 +1,10 @@
 public class Notebook {
     String name;
-    String weight;
+    int weight;
     int price;
     int year;
 
-    public Notebook(String name, String weight, int price, int year) {
+    public Notebook(String name, int weight, int price, int year) {
         this.name = name;
         this.weight = Integer.valueOf(weight);
         this.price = price;
@@ -21,7 +21,7 @@ public class Notebook {
         }
     }
 
-    public String getWeight() {
+    public int getWeight() {
 
         return this.weight;
     }
