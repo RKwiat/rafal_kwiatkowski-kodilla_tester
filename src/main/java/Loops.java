@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Loops {
     private int i;
 
@@ -41,6 +43,18 @@ public class Loops {
         int result = 0;
         for (int i = 0; i < numbers.length; i++) {
             result = result + numbers[i];
+        }
+        return result;
+    }
+
+    public int getCountOfRandomNumber (int max) {
+        Random random = new Random();
+        int result = 0;
+        int sum = 0;
+        while (sum < max) {
+            int temp = random.nextInt(10);
+            sum = sum + temp;
+            result++;
         }
         return result;
     }
